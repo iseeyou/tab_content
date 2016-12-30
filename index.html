@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab-html</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		.tabs-contents{
+			padding: 20px 0;
+		}
+		.tab-content{
+			display: none;
+		}
+		.tab-content.active{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="text-center">接口管理页面</h1>
+	<div class="container">
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active" data-id="tabContent1"><a href="#">标题1</a></li>
+			<li role="presentation" data-id="tabContent2"><a href="#">标题2</a></li>
+			<li role="presentation" data-id="tabContent3"><a href="#">标题3</a></li>
+		</ul>
+
+		<div class="tabs-contents">
+			<!-- 标题1内容区域 -->
+			<div class="tab-content active" id="tabContent1">
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<td>标题1</td>
+							<td><input type="text" class="form-control" name="" placeholder="请输入内容" value="content1"></td>
+						</tr>
+						<tr>
+							<td>标题2</td>
+							<td><input type="text" class="form-control" name="" placeholder="请输入内容" value="content2"></td>
+						</tr>
+						<tr>
+							<td>标题3</td>
+							<td><input type="text" class="form-control" name="" placeholder="请输入内容" value="content3"></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-primary" id="tabSubmit1">提交</button>
+			</div>
+
+			<!-- 标题2内容区域 -->
+			<div class="tab-content" id="tabContent2">
+				<table class="table table-striped">
+					<tbody></tbody>
+				</table>
+				<button type="button" class="btn btn-primary" id="tabSubmit2">提交</button>
+			</div>
+			<!-- 标题3内容区域 -->
+			<div class="tab-content" id="tabContent3">
+				<table class="table table-striped">
+					<tbody></tbody>
+				</table>
+				<button type="button" class="btn btn-primary" id="tabSubmit3">提交</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src='js/jquery1.9.1.min.js'></script>
+	<!-- <script type="text/javascript" src='bootstrap/js/bootstrap.min.js'></script> -->
+	<script type="text/javascript" src='js/index.js'></script>
+</body>
+</html>
